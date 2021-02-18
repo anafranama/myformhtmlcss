@@ -14,17 +14,17 @@
 </head>
 
 <body>
-    <div style="border: whitesmoke; " class="container">
+    <div style="border:2px solid black;; " class="container">
         <div style="background-color: grey; height: 50px;" class="row">
-            <h1>Payment for example</h1>
+            <h1 style=" height: 50px !important;">Payment for example</h1>
 
         </div>
-        <div class="row">
-            <div style="height: 50px;" class="alert alert-danger" role="alert">
- Some fields are missing
-</div>
+        <!-- <div class="row"> -->
+        <div style="height: 50px; width: 100%; margin=0px" class="alert alert-danger" role="alert">
+            Some fields are missing
         </div>
-        
+        <!-- </div> -->
+
         <div class="row">
             <div class="col-5">
                 <label for="Card#">Card#</label>
@@ -51,7 +51,8 @@
                 <label for="City">City</label> <input style="width: 100%;" type="text">
             </div>
             <div class="col-3">
-            <label for="State">State</label>  <input placeholder="Pick a State" style="width: 100%;" type="text"> <select name="State" id="state"></select> 
+                <label for="State">State</label> <input placeholder="Pick a State" style="width: 100%;" type="text">
+                <select name="State" id="state"></select>
             </div>
             <div class="col-3">
                 <label for="Postal Code">Postal Code</label> <input style="width: 100%;" type="text">
@@ -61,33 +62,37 @@
         <div class="row">
             <div class="col-3">
                 <label style="width: 100%;" for="We accept">We accept</label>
-               <div style="background-color: dimgrey;" class="fran1">
+                <div style="background-color: dimgrey;" class="fran1">
                     <input type="radio"> <i class="fab fa-cc-mastercard"></i>
-                <input type="radio"> <i class="fab fa-cc-visa"></i>
-                <input type="radio"> <i class="fab fa-cc-diners-club"></i>
-                <input type="radio"> <i class="far fa-address-card"></i>
-               </div>
+                    <input type="radio"> <i class="fab fa-cc-visa"></i>
+                    <input type="radio"> <i class="fab fa-cc-diners-club"></i>
+                    <input type="radio"> <i class="far fa-address-card"></i>
+                </div>
 
-                
+
             </div>
+
+            <div class="col-3"></div>
+
             <div class="col-6">
-                    <label for="comment">Message:</label>
-  <textarea class="form-control" rows="5" id="Message"></textarea>
-  <h2 style="font-size: small;">Add any notes here</h2>
-</div>
-                    
-                </div>
-        </div>
-        <div style="display: flex;flex-direction: row; justify-content:flex-end" class="row">
-            <div  class="col-6">
-                <div class="boton1">
-                     <button style="background-color: grey; border: grey;" type="button" class="btn btn-primary">Cancel</button>
-            <button type="button" class="btn btn-primary">Send</button>
-                </div>
-               
+                <label for="comment">Message:</label>
+                <textarea class="form-control" rows="5" id="Message"></textarea>
+                <h2 style="font-size: small;">Add any notes here</h2>
             </div>
-            
+
         </div>
+
+        <div style="display: flex;flex-direction: row; justify-content:flex-end" class="row">
+
+        <button style="background-color: grey; border: grey;width: 100px;" type="button"
+            class="btn btn-primary">Cancel</button>
+        <button type="button" class="btn btn-primary" style="width: 100px;">Send</button>
+    </div>
+
+    
+
+
+    </div>
 
 </body>
 
